@@ -1455,13 +1455,23 @@
           </flowsInto>
           <join code="xor" />
           <split code="and" />
-          <completedMappings>
+          <startingMappings>
+            <mapping>
+              <expression query="&lt;Profilassi&gt;{'false'}&lt;/Profilassi&gt;" />
+              <mapsTo>Profilassi</mapsTo>
+            </mapping>
             <mapping>
               <expression query="&lt;Fine&gt;{'true'}&lt;/Fine&gt;" />
               <mapsTo>Fine</mapsTo>
             </mapping>
+          </startingMappings>
+          <completedMappings>
             <mapping>
-              <expression query="&lt;Profilassi&gt;{'false'}&lt;/Profilassi&gt;" />
+              <expression query="&lt;Fine&gt;{/Fine-Profilassi/Fine/text()}&lt;/Fine&gt;" />
+              <mapsTo>Fine</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;Profilassi&gt;{/Fine-Profilassi/Profilassi/text()}&lt;/Profilassi&gt;" />
               <mapsTo>Profilassi</mapsTo>
             </mapping>
           </completedMappings>
@@ -1563,13 +1573,23 @@
           </flowsInto>
           <join code="xor" />
           <split code="and" />
-          <completedMappings>
+          <startingMappings>
+            <mapping>
+              <expression query="&lt;Profilassi&gt;{'false'}&lt;/Profilassi&gt;" />
+              <mapsTo>Profilassi</mapsTo>
+            </mapping>
             <mapping>
               <expression query="&lt;Fine&gt;{'true'}&lt;/Fine&gt;" />
               <mapsTo>Fine</mapsTo>
             </mapping>
+          </startingMappings>
+          <completedMappings>
             <mapping>
-              <expression query="&lt;Profilassi&gt;{'false'}&lt;/Profilassi&gt;" />
+              <expression query="&lt;Fine&gt;{/Fine-Profilassi/Fine/text()}&lt;/Fine&gt;" />
+              <mapsTo>Fine</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;Profilassi&gt;{/Fine-Profilassi/Profilassi/text()}&lt;/Profilassi&gt;" />
               <mapsTo>Profilassi</mapsTo>
             </mapping>
           </completedMappings>
@@ -1666,14 +1686,24 @@
           </flowsInto>
           <join code="xor" />
           <split code="and" />
-          <completedMappings>
+          <startingMappings>
             <mapping>
               <expression query="&lt;Profilassi&gt;{'false'}&lt;/Profilassi&gt;" />
               <mapsTo>Profilassi</mapsTo>
             </mapping>
             <mapping>
-              <expression query="&lt;Fine&gt;{if(/FineProfilassi3/TrattamentoRiuscito/text()='true')then'true' &#xA;else &#xA;'false'}&lt;/Fine&gt;" />
+              <expression query="&lt;Fine&gt;{if(/Ciclo_Mestruale/TrattamentoRiuscito/text()='true')then'true' &#xA;else &#xA;'false'}&lt;/Fine&gt;" />
               <mapsTo>Fine</mapsTo>
+            </mapping>
+          </startingMappings>
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;Fine&gt;{/Fine-Profilassi/Fine/text()}&lt;/Fine&gt;" />
+              <mapsTo>Fine</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;Profilassi&gt;{/Fine-Profilassi/Profilassi/text()}&lt;/Profilassi&gt;" />
+              <mapsTo>Profilassi</mapsTo>
             </mapping>
           </completedMappings>
           <resourcing>
@@ -2078,21 +2108,39 @@
           </flowsInto>
           <join code="xor" />
           <split code="and" />
-          <completedMappings>
-            <mapping>
-              <expression query="&lt;P2&gt;{'N'}&lt;/P2&gt;" />
-              <mapsTo>P2</mapsTo>
-            </mapping>
+          <startingMappings>
             <mapping>
               <expression query="&lt;P1&gt;{if(/Contraccettivi/PeggioramentoStatoPaziente/text()='false')then'F'else'T'}&lt;/P1&gt;" />
               <mapsTo>P1</mapsTo>
             </mapping>
             <mapping>
-              <expression query="&lt;Fine&gt;{if(/Contraccettivi/PeggioramentoStatoPaziente/text()='false')then'true'else'false'}&lt;/Fine&gt;" />
-              <mapsTo>Fine</mapsTo>
+              <expression query="&lt;P2&gt;{'N'}&lt;/P2&gt;" />
+              <mapsTo>P2</mapsTo>
             </mapping>
             <mapping>
               <expression query="&lt;Profilassi&gt;{'false'}&lt;/Profilassi&gt;" />
+              <mapsTo>Profilassi</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;Fine&gt;{if(/Contraccettivi/PeggioramentoStatoPaziente/text()='false')then'true'else'false'}&lt;/Fine&gt;" />
+              <mapsTo>Fine</mapsTo>
+            </mapping>
+          </startingMappings>
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;P2&gt;{/SetP1/P2/text()}&lt;/P2&gt;" />
+              <mapsTo>P2</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;P1&gt;{/SetP1/P1/text()}&lt;/P1&gt;" />
+              <mapsTo>P1</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;Fine&gt;{/SetP1/Fine/text()}&lt;/Fine&gt;" />
+              <mapsTo>Fine</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;Profilassi&gt;{/SetP1/Profilassi/text()}&lt;/Profilassi&gt;" />
               <mapsTo>Profilassi</mapsTo>
             </mapping>
           </completedMappings>
@@ -2141,21 +2189,39 @@
           </flowsInto>
           <join code="xor" />
           <split code="and" />
-          <completedMappings>
-            <mapping>
-              <expression query="&lt;Fine&gt;{if(/Contraccettivi/PeggioramentoStatoPaziente/text()='false')then'true'else'false'}&lt;/Fine&gt;" />
-              <mapsTo>Fine</mapsTo>
-            </mapping>
-            <mapping>
-              <expression query="&lt;Profilassi&gt;{'false'}&lt;/Profilassi&gt;" />
-              <mapsTo>Profilassi</mapsTo>
-            </mapping>
+          <startingMappings>
             <mapping>
               <expression query="&lt;P1&gt;{'N'}&lt;/P1&gt;" />
               <mapsTo>P1</mapsTo>
             </mapping>
             <mapping>
               <expression query="&lt;P2&gt;{if(/Contraccettivi/PeggioramentoStatoPaziente/text()='false')then'F'else'T'}&lt;/P2&gt;" />
+              <mapsTo>P2</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;Profilassi&gt;{'false'}&lt;/Profilassi&gt;" />
+              <mapsTo>Profilassi</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;Fine&gt;{if(/Contraccettivi/PeggioramentoStatoPaziente/text()='false')then'true'else'false'}&lt;/Fine&gt;" />
+              <mapsTo>Fine</mapsTo>
+            </mapping>
+          </startingMappings>
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;P1&gt;{/SetP2/P1/text()}&lt;/P1&gt;" />
+              <mapsTo>P1</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;Fine&gt;{/SetP2/Fine/text()}&lt;/Fine&gt;" />
+              <mapsTo>Fine</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;Profilassi&gt;{/SetP2/Profilassi/text()}&lt;/Profilassi&gt;" />
+              <mapsTo>Profilassi</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;P2&gt;{/SetP2/P2/text()}&lt;/P2&gt;" />
               <mapsTo>P2</mapsTo>
             </mapping>
           </completedMappings>
@@ -2649,7 +2715,7 @@
           </flowsInto>
           <join code="xor" />
           <split code="and" />
-          <completedMappings>
+          <startingMappings>
             <mapping>
               <expression query="&lt;Profilassi&gt;{'true'}&lt;/Profilassi&gt;" />
               <mapsTo>Profilassi</mapsTo>
@@ -2657,6 +2723,16 @@
             <mapping>
               <expression query="&lt;Fine&gt;{'false'}&lt;/Fine&gt;" />
               <mapsTo>Fine</mapsTo>
+            </mapping>
+          </startingMappings>
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;Fine&gt;{/Fine-Profilassi/Fine/text()}&lt;/Fine&gt;" />
+              <mapsTo>Fine</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;Profilassi&gt;{/Fine-Profilassi/Profilassi/text()}&lt;/Profilassi&gt;" />
+              <mapsTo>Profilassi</mapsTo>
             </mapping>
           </completedMappings>
           <resourcing>
@@ -2767,13 +2843,23 @@
           </flowsInto>
           <join code="xor" />
           <split code="and" />
-          <completedMappings>
+          <startingMappings>
+            <mapping>
+              <expression query="&lt;Profilassi&gt;{'false'}&lt;/Profilassi&gt;" />
+              <mapsTo>Profilassi</mapsTo>
+            </mapping>
             <mapping>
               <expression query="&lt;Fine&gt;{'true'}&lt;/Fine&gt;" />
               <mapsTo>Fine</mapsTo>
             </mapping>
+          </startingMappings>
+          <completedMappings>
             <mapping>
-              <expression query="&lt;Profilassi&gt;{'false'}&lt;/Profilassi&gt;" />
+              <expression query="&lt;Fine&gt;{/Fine-Profilassi/Fine/text()}&lt;/Fine&gt;" />
+              <mapsTo>Fine</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;Profilassi&gt;{/Fine-Profilassi/Profilassi/text()}&lt;/Profilassi&gt;" />
               <mapsTo>Profilassi</mapsTo>
             </mapping>
           </completedMappings>
@@ -2852,13 +2938,23 @@
           </flowsInto>
           <join code="xor" />
           <split code="and" />
+          <startingMappings>
+            <mapping>
+              <expression query="&lt;Profilassi&gt;{'false'}&lt;/Profilassi&gt;" />
+              <mapsTo>Profilassi</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;Fine&gt;{if(/MenoPausa/TrattamentoRiuscito/text()='true')then'true' &#xA;else &#xA;'false'}&lt;/Fine&gt;" />
+              <mapsTo>Fine</mapsTo>
+            </mapping>
+          </startingMappings>
           <completedMappings>
             <mapping>
-              <expression query="&lt;Fine&gt;{if(/GestioneFineProfilassi3/TrattamentoRiuscito/text()='true')then'true' &#xA;else &#xA;'false'}&lt;/Fine&gt;" />
+              <expression query="&lt;Fine&gt;{/Fine-Profilassi/Fine/text()}&lt;/Fine&gt;" />
               <mapsTo>Fine</mapsTo>
             </mapping>
             <mapping>
-              <expression query="&lt;Profilassi&gt;{'false'}&lt;/Profilassi&gt;" />
+              <expression query="&lt;Profilassi&gt;{/Fine-Profilassi/Profilassi/text()}&lt;/Profilassi&gt;" />
               <mapsTo>Profilassi</mapsTo>
             </mapping>
           </completedMappings>
@@ -3262,9 +3358,15 @@
           </flowsInto>
           <join code="xor" />
           <split code="and" />
-          <completedMappings>
+          <startingMappings>
             <mapping>
               <expression query="&lt;TrattamentoRiuscito&gt;{'false'}&lt;/TrattamentoRiuscito&gt;" />
+              <mapsTo>TrattamentoRiuscito</mapsTo>
+            </mapping>
+          </startingMappings>
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;TrattamentoRiuscito&gt;{/DHE/TrattamentoRiuscito/text()}&lt;/TrattamentoRiuscito&gt;" />
               <mapsTo>TrattamentoRiuscito</mapsTo>
             </mapping>
           </completedMappings>
@@ -3858,7 +3960,7 @@
         <task id="Acquisizione_misure_diagnostiche">
           <name>Acquisizione misure diagnostiche</name>
           <flowsInto>
-            <nextElementRef id="Informazioni_mal_di_testa" />
+            <nextElementRef id="Prova" />
           </flowsInto>
           <join code="xor" />
           <split code="and" />
@@ -3885,6 +3987,26 @@
             <start initiator="system" />
           </resourcing>
           <decomposesTo id="Acquisizione_misure_diagnostiche" />
+        </task>
+        <task id="Prova">
+          <name>Prova</name>
+          <flowsInto>
+            <nextElementRef id="Informazioni_mal_di_testa" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <startingMappings>
+            <mapping>
+              <expression query="&lt;MisureDiagnostiche&gt;{/Sottorete_Anamnesi/MisureDiagnostiche/*}&lt;/MisureDiagnostiche&gt;" />
+              <mapsTo>MisureDiagnostiche</mapsTo>
+            </mapping>
+          </startingMappings>
+          <resourcing>
+            <offer initiator="user" />
+            <allocate initiator="user" />
+            <start initiator="user" />
+          </resourcing>
+          <decomposesTo id="Prova" />
         </task>
         <task id="Informazioni_mal_di_testa">
           <name>Informazioni mal di testa</name>
@@ -4606,12 +4728,17 @@
       <externalInteraction>manual</externalInteraction>
     </decomposition>
     <decomposition id="DHE" xsi:type="WebServiceGatewayFactsType">
+      <inputParam>
+        <index>0</index>
+        <name>TrattamentoRiuscito</name>
+        <type>boolean</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
       <outputParam>
         <index>0</index>
         <name>TrattamentoRiuscito</name>
         <type>boolean</type>
         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
-        <defaultValue>false</defaultValue>
       </outputParam>
       <externalInteraction>automated</externalInteraction>
     </decomposition>
@@ -4650,19 +4777,29 @@
       <externalInteraction>automated</externalInteraction>
     </decomposition>
     <decomposition id="Fine-Profilassi" xsi:type="WebServiceGatewayFactsType">
+      <inputParam>
+        <index>0</index>
+        <name>Fine</name>
+        <type>boolean</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <inputParam>
+        <index>1</index>
+        <name>Profilassi</name>
+        <type>boolean</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
       <outputParam>
         <index>0</index>
         <name>Fine</name>
         <type>boolean</type>
         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
-        <defaultValue />
       </outputParam>
       <outputParam>
         <index>1</index>
         <name>Profilassi</name>
         <type>boolean</type>
         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
-        <defaultValue />
       </outputParam>
       <externalInteraction>automated</externalInteraction>
     </decomposition>
@@ -4918,6 +5055,23 @@
       </outputParam>
       <externalInteraction>manual</externalInteraction>
     </decomposition>
+    <decomposition id="Prova" xsi:type="WebServiceGatewayFactsType">
+      <inputParam>
+        <index>0</index>
+        <name>MisureDiagnostiche</name>
+        <type>MisureDiagnostiche</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <outputParam>
+        <index>1</index>
+        <name>CauseDiPreoccupazione</name>
+        <type>CauseDiPreoccupazione</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+        <defaultValue />
+      </outputParam>
+      <codelet>org.yawlfoundation.yawl.resourcing.codelets.CodeletAnamnesi</codelet>
+      <externalInteraction>automated</externalInteraction>
+    </decomposition>
     <decomposition id="Registrazione_paziente" xsi:type="WebServiceGatewayFactsType">
       <name>Registrazione paziente</name>
       <outputParam>
@@ -5013,64 +5167,104 @@
       <externalInteraction>manual</externalInteraction>
     </decomposition>
     <decomposition id="SetP1" xsi:type="WebServiceGatewayFactsType">
+      <inputParam>
+        <index>0</index>
+        <name>P1</name>
+        <type>Peggioramento</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <inputParam>
+        <index>1</index>
+        <name>Fine</name>
+        <type>boolean</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <inputParam>
+        <index>2</index>
+        <name>Profilassi</name>
+        <type>boolean</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <inputParam>
+        <index>3</index>
+        <name>P2</name>
+        <type>Peggioramento</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
       <outputParam>
         <index>0</index>
         <name>P1</name>
         <type>Peggioramento</type>
         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
-        <defaultValue />
       </outputParam>
       <outputParam>
         <index>1</index>
         <name>Fine</name>
         <type>boolean</type>
         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
-        <defaultValue />
       </outputParam>
       <outputParam>
         <index>2</index>
         <name>Profilassi</name>
         <type>boolean</type>
         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
-        <defaultValue />
       </outputParam>
       <outputParam>
         <index>3</index>
         <name>P2</name>
         <type>Peggioramento</type>
         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
-        <defaultValue />
       </outputParam>
       <externalInteraction>automated</externalInteraction>
     </decomposition>
     <decomposition id="SetP2" xsi:type="WebServiceGatewayFactsType">
+      <inputParam>
+        <index>0</index>
+        <name>P2</name>
+        <type>Peggioramento</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <inputParam>
+        <index>1</index>
+        <name>Fine</name>
+        <type>boolean</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <inputParam>
+        <index>2</index>
+        <name>Profilassi</name>
+        <type>boolean</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <inputParam>
+        <index>3</index>
+        <name>P1</name>
+        <type>Peggioramento</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
       <outputParam>
         <index>0</index>
         <name>P2</name>
         <type>Peggioramento</type>
         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
-        <defaultValue />
       </outputParam>
       <outputParam>
         <index>1</index>
         <name>Fine</name>
         <type>boolean</type>
         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
-        <defaultValue />
       </outputParam>
       <outputParam>
         <index>2</index>
         <name>Profilassi</name>
         <type>boolean</type>
         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
-        <defaultValue />
       </outputParam>
       <outputParam>
         <index>3</index>
         <name>P1</name>
         <type>Peggioramento</type>
         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
-        <defaultValue />
       </outputParam>
       <externalInteraction>automated</externalInteraction>
     </decomposition>
@@ -5637,6 +5831,231 @@
     <locale language="it" country="IT"/>
     <specification id="Progetto" defaultBgColor="-526351">
       <size w="62" h="26"/>
+      <net id="MenoPausa" bgColor="-526351">
+        <bounds x="0" y="0" w="1684" h="705"/>
+        <frame x="0" y="0" w="1687" h="708"/>
+        <viewport x="0" y="0" w="1687" h="708"/>
+        <vertex id="OutputCondition_6">
+          <attributes>
+            <bounds x="1.612" y="344" w="32" h="32"/>
+          </attributes>
+        </vertex>
+        <vertex id="InputCondition_6">
+          <attributes>
+            <bounds x="28" y="340" w="32" h="32"/>
+          </attributes>
+        </vertex>
+        <container id="Valutazione_prof_orm">
+          <vertex>
+            <attributes>
+              <bounds x="500" y="420" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="472" y="452" w="96" h="40"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="531" y="420" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Preferenza_Paziente">
+          <vertex>
+            <attributes>
+              <bounds x="136" y="336" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="108" y="368" w="96" h="40"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="167" y="336" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Valutazione_trattamento_riformulato">
+          <vertex>
+            <attributes>
+              <bounds x="884" y="484" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="852" y="516" w="97" h="61"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="GestioneFineProfilassi3">
+          <vertex>
+            <attributes>
+              <bounds x="1.060" y="476" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="1.008" y="508" w="137" h="20"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="GestioneFineProfilassi2">
+          <vertex>
+            <attributes>
+              <bounds x="732" y="420" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="680" y="452" w="137" h="20"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="GestioneFineProfilassi">
+          <vertex>
+            <attributes>
+              <bounds x="420" y="344" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="371" y="376" w="130" h="20"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Tratamento_profilattico_ormonale">
+          <vertex>
+            <attributes>
+              <bounds x="312" y="416" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="280" y="448" w="96" h="60"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Attesa_trattamento_riformulato">
+          <vertex>
+            <attributes>
+              <bounds x="772" y="488" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="740" y="520" w="97" h="61"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Riformulazione_trattamento">
+          <vertex>
+            <attributes>
+              <bounds x="660" y="492" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="628" y="524" w="96" h="40"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Attesa_prof_orm">
+          <vertex>
+            <attributes>
+              <bounds x="412" y="420" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="380" y="452" w="97" h="21"/>
+            </attributes>
+          </label>
+        </container>
+        <flow source="Preferenza_Paziente" target="GestioneFineProfilassi">
+          <ports in="3" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Riformulazione_trattamento" target="Attesa_trattamento_riformulato">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="GestioneFineProfilassi2" target="OutputCondition_6">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_prof_orm" target="GestioneFineProfilassi2">
+          <ports in="3" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="GestioneFineProfilassi3" target="OutputCondition_6">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_prof_orm" target="Riformulazione_trattamento">
+          <ports in="3" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="GestioneFineProfilassi" target="OutputCondition_6">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Attesa_prof_orm" target="Valutazione_prof_orm">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Tratamento_profilattico_ormonale" target="Attesa_prof_orm">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="InputCondition_6" target="Preferenza_Paziente">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Attesa_trattamento_riformulato" target="Valutazione_trattamento_riformulato">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_trattamento_riformulato" target="GestioneFineProfilassi3">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Preferenza_Paziente" target="Tratamento_profilattico_ormonale">
+          <ports in="3" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+      </net>
       <net id="Scelta_Trattamento" bgColor="-526351">
         <bounds x="0" y="-100" w="1669" h="805"/>
         <frame x="0" y="0" w="1687" h="708"/>
@@ -6087,14 +6506,14 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Oppiacei" target="Attesa_aggiuntivo">
-          <ports in="13" out="12"/>
+        <flow source="Valutazione_trattamento_desometazone" target="OutputCondition_3">
+          <ports in="2" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Valutazione_trattamento_desometazone" target="OutputCondition_3">
-          <ports in="2" out="12"/>
+        <flow source="Oppiacei" target="Attesa_aggiuntivo">
+          <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
@@ -6111,13 +6530,13 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="InputCondition_3" target="Infografica_Trattamento">
+        <flow source="Cloropromazina" target="Attesa_cloropromazina">
           <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Cloropromazina" target="Attesa_cloropromazina">
+        <flow source="InputCondition_3" target="Infografica_Trattamento">
           <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
@@ -6163,14 +6582,14 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Valutazione_trattamento_desometazone" target="Infografica_Sepcialista">
-          <ports in="3" out="3"/>
+        <flow source="Desometasone" target="Attesa_aggiuntivo_1">
+          <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Desometasone" target="Attesa_aggiuntivo_1">
-          <ports in="13" out="12"/>
+        <flow source="Valutazione_trattamento_desometazone" target="Infografica_Sepcialista">
+          <ports in="3" out="3"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
@@ -6187,14 +6606,26 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Scelta_trattamento_acuto" target="Trattamento_severo">
-          <ports in="3" out="2"/>
+        <flow source="Scelta_trattamento_acuto" target="Trattamento_aggiuntivo">
+          <ports in="4" out="2"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Scelta_trattamento_acuto" target="Trattamento_aggiuntivo">
-          <ports in="4" out="2"/>
+        <flow source="Valutazione_trattamento_severo" target="Scelta_visita_specialistica">
+          <ports in="3" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Attesa_cloropromazina" target="Valutazione_trattamento_cloropromazina">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Scelta_trattamento_acuto" target="Trattamento_severo">
+          <ports in="3" out="2"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
@@ -6208,18 +6639,6 @@
               <value x="408" y="668"/>
               <value x="484" y="747,5"/>
             </points>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_trattamento_severo" target="Scelta_visita_specialistica">
-          <ports in="3" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Attesa_cloropromazina" target="Valutazione_trattamento_cloropromazina">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
           </attributes>
         </flow>
         <flow source="Scelta_trattamento_acuto" target="Trattamento_moderato">
@@ -6246,12 +6665,6 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Infografica_Sepcialista" target="OutputCondition_3">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
         <flow source="Valutazione_trattamento_moderato" target="Trattamento_severo">
           <ports in="4" out="2"/>
           <attributes>
@@ -6264,227 +6677,8 @@
             </points>
           </attributes>
         </flow>
-      </net>
-      <net id="MenoPausa" bgColor="-526351">
-        <bounds x="0" y="0" w="1684" h="705"/>
-        <frame x="0" y="0" w="1687" h="708"/>
-        <viewport x="0" y="0" w="1687" h="708"/>
-        <vertex id="OutputCondition_6">
-          <attributes>
-            <bounds x="1.612" y="344" w="32" h="32"/>
-          </attributes>
-        </vertex>
-        <vertex id="InputCondition_6">
-          <attributes>
-            <bounds x="28" y="340" w="32" h="32"/>
-          </attributes>
-        </vertex>
-        <container id="Valutazione_prof_orm">
-          <vertex>
-            <attributes>
-              <bounds x="500" y="420" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="472" y="452" w="96" h="40"/>
-            </attributes>
-          </label>
-          <decorator type="XOR_split">
-            <position>13</position>
-            <attributes>
-              <bounds x="531" y="420" w="11" h="32"/>
-            </attributes>
-          </decorator>
-        </container>
-        <container id="Preferenza_Paziente">
-          <vertex>
-            <attributes>
-              <bounds x="136" y="336" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="108" y="368" w="96" h="40"/>
-            </attributes>
-          </label>
-          <decorator type="XOR_split">
-            <position>13</position>
-            <attributes>
-              <bounds x="167" y="336" w="11" h="32"/>
-            </attributes>
-          </decorator>
-        </container>
-        <container id="Valutazione_trattamento_riformulato">
-          <vertex>
-            <attributes>
-              <bounds x="884" y="484" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="852" y="516" w="97" h="61"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="GestioneFineProfilassi3">
-          <vertex>
-            <attributes>
-              <bounds x="1.060" y="476" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="1.008" y="508" w="137" h="20"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="GestioneFineProfilassi2">
-          <vertex>
-            <attributes>
-              <bounds x="732" y="420" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="680" y="452" w="137" h="20"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="GestioneFineProfilassi">
-          <vertex>
-            <attributes>
-              <bounds x="420" y="344" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="371" y="376" w="130" h="20"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Tratamento_profilattico_ormonale">
-          <vertex>
-            <attributes>
-              <bounds x="312" y="416" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="280" y="448" w="96" h="60"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Attesa_trattamento_riformulato">
-          <vertex>
-            <attributes>
-              <bounds x="772" y="488" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="740" y="520" w="97" h="61"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Riformulazione_trattamento">
-          <vertex>
-            <attributes>
-              <bounds x="660" y="492" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="628" y="524" w="96" h="40"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Attesa_prof_orm">
-          <vertex>
-            <attributes>
-              <bounds x="412" y="420" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="380" y="452" w="97" h="21"/>
-            </attributes>
-          </label>
-        </container>
-        <flow source="Preferenza_Paziente" target="GestioneFineProfilassi">
-          <ports in="3" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Riformulazione_trattamento" target="Attesa_trattamento_riformulato">
+        <flow source="Infografica_Sepcialista" target="OutputCondition_3">
           <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="GestioneFineProfilassi2" target="OutputCondition_6">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_prof_orm" target="GestioneFineProfilassi2">
-          <ports in="3" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="GestioneFineProfilassi3" target="OutputCondition_6">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_prof_orm" target="Riformulazione_trattamento">
-          <ports in="3" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="GestioneFineProfilassi" target="OutputCondition_6">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Attesa_prof_orm" target="Valutazione_prof_orm">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="InputCondition_6" target="Preferenza_Paziente">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Tratamento_profilattico_ormonale" target="Attesa_prof_orm">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Attesa_trattamento_riformulato" target="Valutazione_trattamento_riformulato">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_trattamento_riformulato" target="GestioneFineProfilassi3">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Preferenza_Paziente" target="Tratamento_profilattico_ormonale">
-          <ports in="3" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
@@ -6624,16 +6818,6 @@
             </attributes>
           </decorator>
         </container>
-        <flow source="Imaging" target="Visualizza_referto_esame">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-            <points>
-              <value x="707" y="339,5"/>
-              <value x="816" y="359,5"/>
-            </points>
-          </attributes>
-        </flow>
         <flow source="Cause_di_preoccupazione" target="Imposto_Variabile_Fine_MdT">
           <ports in="3" out="12"/>
           <attributes>
@@ -6644,6 +6828,22 @@
             </points>
           </attributes>
         </flow>
+        <flow source="Imaging" target="Visualizza_referto_esame">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+            <points>
+              <value x="707" y="339,5"/>
+              <value x="816" y="359,5"/>
+            </points>
+          </attributes>
+        </flow>
+        <flow source="Visuallizza_referto_visita_spec" target="OutputCondition_2">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
         <flow source="InputCondition_2" target="Codelet_visualizza_cause">
           <ports in="13" out="12"/>
           <attributes>
@@ -6651,12 +6851,6 @@
           </attributes>
         </flow>
         <flow source="Imposto_Variabile_Fine_MdT" target="OutputCondition_2">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Visuallizza_referto_visita_spec" target="OutputCondition_2">
           <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
@@ -7041,244 +7235,13 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Infografica_Trattamento_non_farmacologico" target="Scelta_trattamento_non_farmacologico">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
         <flow source="Valutazione_BetaTri" target="OutputCondition_4">
           <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-      </net>
-      <net id="Contraccettivi" bgColor="-526351">
-        <bounds x="0" y="0" w="1684" h="705"/>
-        <frame x="0" y="0" w="1687" h="708"/>
-        <viewport x="0" y="0" w="1687" h="708"/>
-        <vertex id="OutputCondition_7">
-          <attributes>
-            <bounds x="1.080" y="364" w="32" h="32"/>
-          </attributes>
-        </vertex>
-        <vertex id="InputCondition_7">
-          <attributes>
-            <bounds x="0" y="348" w="32" h="32"/>
-          </attributes>
-        </vertex>
-        <container id="SetP1">
-          <vertex>
-            <attributes>
-              <bounds x="744" y="300" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="712" y="332" w="96" h="20"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Valutazione_trattamento_senza_estrogeni_P1">
-          <vertex>
-            <attributes>
-              <bounds x="600" y="268" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="568" y="300" w="97" h="81"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Preferenza_estrogeni">
-          <vertex>
-            <attributes>
-              <bounds x="96" y="352" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="68" y="384" w="97" h="41"/>
-            </attributes>
-          </label>
-          <decorator type="XOR_split">
-            <position>13</position>
-            <attributes>
-              <bounds x="127" y="352" w="11" h="32"/>
-            </attributes>
-          </decorator>
-        </container>
-        <container id="SetP2">
-          <vertex>
-            <attributes>
-              <bounds x="752" y="440" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="720" y="472" w="96" h="20"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Valutazione_rischi">
-          <vertex>
-            <attributes>
-              <bounds x="228" y="420" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="200" y="452" w="97" h="41"/>
-            </attributes>
-          </label>
-          <decorator type="XOR_split">
-            <position>13</position>
-            <attributes>
-              <bounds x="259" y="420" w="11" h="32"/>
-            </attributes>
-          </decorator>
-        </container>
-        <container id="Trattamento_senza_estrogeni">
-          <vertex>
-            <attributes>
-              <bounds x="376" y="276" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="340" y="308" w="97" h="41"/>
-            </attributes>
-          </label>
-          <decorator type="XOR_join">
-            <position>12</position>
-            <attributes>
-              <bounds x="366" y="276" w="11" h="32"/>
-            </attributes>
-          </decorator>
-        </container>
-        <container id="Attesa_trattamento_senza_estrogeni">
-          <vertex>
-            <attributes>
-              <bounds x="480" y="268" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="448" y="300" w="97" h="61"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Trattamento_con_estrogeno">
-          <vertex>
-            <attributes>
-              <bounds x="332" y="444" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="300" y="476" w="96" h="40"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Attesa_trattamento_con_estrogeno">
-          <vertex>
-            <attributes>
-              <bounds x="456" y="456" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="424" y="488" w="96" h="60"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Valutazione_trattemento_con_estrogeni_P2">
-          <vertex>
-            <attributes>
-              <bounds x="560" y="460" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="528" y="492" w="97" h="61"/>
-            </attributes>
-          </label>
-        </container>
-        <flow source="Valutazione_rischi" target="Trattamento_con_estrogeno">
-          <ports in="3" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Attesa_trattamento_con_estrogeno" target="Valutazione_trattemento_con_estrogeni_P2">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="InputCondition_7" target="Preferenza_estrogeni">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Attesa_trattamento_senza_estrogeni" target="Valutazione_trattamento_senza_estrogeni_P1">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Trattamento_senza_estrogeni" target="Attesa_trattamento_senza_estrogeni">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_rischi" target="Trattamento_senza_estrogeni">
-          <ports in="2" out="3"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Preferenza_estrogeni" target="Trattamento_senza_estrogeni">
-          <ports in="2" out="2"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_trattamento_senza_estrogeni_P1" target="SetP1">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Trattamento_con_estrogeno" target="Attesa_trattamento_con_estrogeno">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_trattemento_con_estrogeni_P2" target="SetP2">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Preferenza_estrogeni" target="Valutazione_rischi">
-          <ports in="3" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="SetP2" target="OutputCondition_7">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="SetP1" target="OutputCondition_7">
+        <flow source="Infografica_Trattamento_non_farmacologico" target="Scelta_trattamento_non_farmacologico">
           <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
@@ -7485,7 +7448,7 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Attesa_profilassi_donna" target="Valutazione_profilassi_donna">
+        <flow source="InputCondition_5" target="Valutazione_trattamento_acuto">
           <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
@@ -7497,13 +7460,244 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="InputCondition_5" target="Valutazione_trattamento_acuto">
+        <flow source="Attesa_profilassi_donna" target="Valutazione_profilassi_donna">
           <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
         <flow source="FineProfilassi2" target="OutputCondition_5">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+      </net>
+      <net id="Contraccettivi" bgColor="-526351">
+        <bounds x="0" y="0" w="1684" h="705"/>
+        <frame x="0" y="0" w="1687" h="708"/>
+        <viewport x="0" y="0" w="1687" h="708"/>
+        <vertex id="OutputCondition_7">
+          <attributes>
+            <bounds x="1.080" y="364" w="32" h="32"/>
+          </attributes>
+        </vertex>
+        <vertex id="InputCondition_7">
+          <attributes>
+            <bounds x="0" y="348" w="32" h="32"/>
+          </attributes>
+        </vertex>
+        <container id="SetP1">
+          <vertex>
+            <attributes>
+              <bounds x="744" y="300" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="712" y="332" w="96" h="20"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Valutazione_trattamento_senza_estrogeni_P1">
+          <vertex>
+            <attributes>
+              <bounds x="600" y="268" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="568" y="300" w="97" h="81"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Preferenza_estrogeni">
+          <vertex>
+            <attributes>
+              <bounds x="96" y="352" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="68" y="384" w="97" h="41"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="127" y="352" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="SetP2">
+          <vertex>
+            <attributes>
+              <bounds x="752" y="440" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="720" y="472" w="96" h="20"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Valutazione_rischi">
+          <vertex>
+            <attributes>
+              <bounds x="228" y="420" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="200" y="452" w="97" h="41"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="259" y="420" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Trattamento_senza_estrogeni">
+          <vertex>
+            <attributes>
+              <bounds x="376" y="276" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="340" y="308" w="97" h="41"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_join">
+            <position>12</position>
+            <attributes>
+              <bounds x="366" y="276" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Attesa_trattamento_senza_estrogeni">
+          <vertex>
+            <attributes>
+              <bounds x="480" y="268" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="448" y="300" w="97" h="61"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Trattamento_con_estrogeno">
+          <vertex>
+            <attributes>
+              <bounds x="332" y="444" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="300" y="476" w="96" h="40"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Attesa_trattamento_con_estrogeno">
+          <vertex>
+            <attributes>
+              <bounds x="456" y="456" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="424" y="488" w="96" h="60"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Valutazione_trattemento_con_estrogeni_P2">
+          <vertex>
+            <attributes>
+              <bounds x="560" y="460" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="528" y="492" w="97" h="61"/>
+            </attributes>
+          </label>
+        </container>
+        <flow source="Valutazione_rischi" target="Trattamento_con_estrogeno">
+          <ports in="3" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Attesa_trattamento_con_estrogeno" target="Valutazione_trattemento_con_estrogeni_P2">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="InputCondition_7" target="Preferenza_estrogeni">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Attesa_trattamento_senza_estrogeni" target="Valutazione_trattamento_senza_estrogeni_P1">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Trattamento_senza_estrogeni" target="Attesa_trattamento_senza_estrogeni">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Preferenza_estrogeni" target="Trattamento_senza_estrogeni">
+          <ports in="2" out="2"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_rischi" target="Trattamento_senza_estrogeni">
+          <ports in="2" out="3"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_trattamento_senza_estrogeni_P1" target="SetP1">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Trattamento_con_estrogeno" target="Attesa_trattamento_con_estrogeno">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_trattemento_con_estrogeni_P2" target="SetP2">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Preferenza_estrogeni" target="Valutazione_rischi">
+          <ports in="3" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="SetP2" target="OutputCondition_7">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="SetP1" target="OutputCondition_7">
           <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
@@ -7533,6 +7727,18 @@
           <label>
             <attributes>
               <bounds x="184" y="376" w="96" h="40"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Prova">
+          <vertex>
+            <attributes>
+              <bounds x="864" y="344" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="832" y="376" w="96" h="20"/>
             </attributes>
           </label>
         </container>
@@ -7572,13 +7778,19 @@
             </attributes>
           </label>
         </container>
+        <flow source="Prova" target="Informazioni_mal_di_testa">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
         <flow source="Calcolo_Eta" target="Acquisizione_misure_diagnostiche">
           <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Acquisizione_misure_diagnostiche" target="Informazioni_mal_di_testa">
+        <flow source="Acquisizione_misure_diagnostiche" target="Prova">
           <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
@@ -7590,13 +7802,13 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="InputCondition_1" target="Registrazione_paziente">
+        <flow source="Informazioni_mal_di_testa" target="OutputCondition_1">
           <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Informazioni_mal_di_testa" target="OutputCondition_1">
+        <flow source="InputCondition_1" target="Registrazione_paziente">
           <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
@@ -7604,7 +7816,7 @@
         </flow>
       </net>
       <net id="Net" bgColor="-526351">
-        <bounds x="-341" y="-438" w="2224" h="1326"/>
+        <bounds x="-413" y="-432" w="2224" h="1326"/>
         <frame x="0" y="0" w="1687" h="708"/>
         <viewport x="0" y="0" w="1687" h="708"/>
         <vertex id="OutputCondition">
@@ -8019,14 +8231,14 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Scelta_Trattamento" target="OutputCondition">
-          <ports in="1" out="12"/>
+        <flow source="Valutazione_PeggioramentoFine" target="Continua_Terapia_1">
+          <ports in="3" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Valutazione_PeggioramentoFine" target="Continua_Terapia_1">
-          <ports in="3" out="12"/>
+        <flow source="Scelta_Trattamento" target="OutputCondition">
+          <ports in="1" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
@@ -8049,14 +8261,14 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Trattamento_Profilattico_Generico" target="Specialista_Link">
-          <ports in="3" out="2"/>
+        <flow source="Continua_Terapia_1" target="OutputCondition">
+          <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Continua_Terapia_1" target="OutputCondition">
-          <ports in="13" out="12"/>
+        <flow source="Trattamento_Profilattico_Generico" target="Specialista_Link">
+          <ports in="3" out="2"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
@@ -8090,14 +8302,14 @@
             </points>
           </attributes>
         </flow>
-        <flow source="Sottorete_Anamnesi" target="Ipotesi_MdT_Primaria_Secondaria">
-          <ports in="13" out="3"/>
+        <flow source="InfograficaEmicrania" target="Criteri_Emicrania">
+          <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="InfograficaEmicrania" target="Criteri_Emicrania">
-          <ports in="13" out="12"/>
+        <flow source="Sottorete_Anamnesi" target="Ipotesi_MdT_Primaria_Secondaria">
+          <ports in="13" out="3"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
@@ -8158,26 +8370,26 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="MdT_Ormone_correlato" target="InfograficaOrmonale">
-          <ports in="4" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
         <flow source="Valutazione_P1P2" target="Opzioni_P2">
           <ports in="3" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Opzioni_P1" target="Specialista_Link">
-          <ports in="1" out="3"/>
+        <flow source="MdT_Ormone_correlato" target="InfograficaOrmonale">
+          <ports in="4" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
         <flow source="Valutazione_P1P2" target="Opzioni_P1">
           <ports in="2" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Opzioni_P1" target="Specialista_Link">
+          <ports in="1" out="3"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
