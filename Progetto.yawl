@@ -682,7 +682,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -761,16 +761,16 @@
           <split code="xor" />
           <startingMappings>
             <mapping>
-              <expression query="&lt;Menopausa&gt;{/Net/StoriaClinica/FattoriScatenanti/Menopausa/text()}&lt;/Menopausa&gt;" />
-              <mapsTo>Menopausa</mapsTo>
+              <expression query="&lt;CicloMestruale&gt;{/Net/StoriaClinica/FattoriScatenanti/CicloMestrule/text()}&lt;/CicloMestruale&gt;" />
+              <mapsTo>CicloMestruale</mapsTo>
             </mapping>
             <mapping>
               <expression query="&lt;Puberta&gt;{/Net/StoriaClinica/FattoriScatenanti/Puberta/text()}&lt;/Puberta&gt;" />
               <mapsTo>Puberta</mapsTo>
             </mapping>
             <mapping>
-              <expression query="&lt;CicloMestruale&gt;{/Net/StoriaClinica/FattoriScatenanti/CicloMestrule/text()}&lt;/CicloMestruale&gt;" />
-              <mapsTo>CicloMestruale</mapsTo>
+              <expression query="&lt;Menopausa&gt;{/Net/StoriaClinica/FattoriScatenanti/Menopausa/text()}&lt;/Menopausa&gt;" />
+              <mapsTo>Menopausa</mapsTo>
             </mapping>
             <mapping>
               <expression query="&lt;Gravidanza&gt;{/Net/StoriaClinica/FattoriScatenanti/Gravidanza/text()}&lt;/Gravidanza&gt;" />
@@ -791,7 +791,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -845,7 +845,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -917,12 +917,12 @@
               <mapsTo>Immagine5</mapsTo>
             </mapping>
             <mapping>
-              <expression query="&lt;StoriaClinica&gt;{/Net/StoriaClinica/*}&lt;/StoriaClinica&gt;" />
-              <mapsTo>StoriaClinica</mapsTo>
-            </mapping>
-            <mapping>
               <expression query="&lt;Immagine4&gt;{/Net/Immagine4/text()}&lt;/Immagine4&gt;" />
               <mapsTo>Immagine4</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;StoriaClinica&gt;{/Net/StoriaClinica/*}&lt;/StoriaClinica&gt;" />
+              <mapsTo>StoriaClinica</mapsTo>
             </mapping>
           </startingMappings>
           <completedMappings>
@@ -956,7 +956,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -1273,7 +1273,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -1313,7 +1313,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -1430,7 +1430,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -1485,7 +1485,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -1538,7 +1538,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -1593,7 +1593,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -1641,7 +1641,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -1856,7 +1856,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -1887,7 +1887,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -1951,7 +1951,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -2005,7 +2005,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -2053,7 +2053,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -2116,7 +2116,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -2199,7 +2199,7 @@
         <name>Suggerimento_LG</name>
         <type>string</type>
         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
-        <initialValue>xxx</initialValue>
+        <initialValue />
       </localVariable>
       <localVariable>
         <index>3</index>
@@ -2266,6 +2266,10 @@
               <expression query="&lt;CauseDiPreoccupazionePresenti&gt;{/Codelet_Preoccupazione/CauseDiPreoccupazionePresenti/text()}&lt;/CauseDiPreoccupazionePresenti&gt;" />
               <mapsTo>CauseDiPreoccupazionePresenti</mapsTo>
             </mapping>
+            <mapping>
+              <expression query="&lt;Suggerimento_LG&gt;{/Codelet_Preoccupazione/Suggerimento_LG/text()}&lt;/Suggerimento_LG&gt;" />
+              <mapsTo>Suggerimento_LG</mapsTo>
+            </mapping>
           </completedMappings>
           <resourcing>
             <offer initiator="user" />
@@ -2302,7 +2306,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -2323,11 +2327,17 @@
           </flowsInto>
           <join code="xor" />
           <split code="and" />
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;FineIpotesiMdt&gt;{/Criteri_MdT_primaria/FineIpotesiEmicrania/text()}&lt;/FineIpotesiMdt&gt;" />
+              <mapsTo>FineIpotesiMdt</mapsTo>
+            </mapping>
+          </completedMappings>
           <resourcing>
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -2367,7 +2377,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -2437,7 +2447,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -2468,7 +2478,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -2612,7 +2622,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -2671,7 +2681,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -2730,7 +2740,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -2786,9 +2796,19 @@
             </mapping>
           </completedMappings>
           <resourcing>
-            <offer initiator="user" />
-            <allocate initiator="user" />
-            <start initiator="user" />
+            <offer initiator="system">
+              <distributionSet>
+                <initialSet>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
+                </initialSet>
+              </distributionSet>
+            </offer>
+            <allocate initiator="system">
+              <allocator>
+                <name>RandomChoice</name>
+              </allocator>
+            </allocate>
+            <start initiator="system" />
           </resourcing>
           <decomposesTo id="Riformulazione_trattamento" />
         </task>
@@ -2823,9 +2843,19 @@
             </mapping>
           </completedMappings>
           <resourcing>
-            <offer initiator="user" />
-            <allocate initiator="user" />
-            <start initiator="user" />
+            <offer initiator="system">
+              <distributionSet>
+                <initialSet>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
+                </initialSet>
+              </distributionSet>
+            </offer>
+            <allocate initiator="system">
+              <allocator>
+                <name>RandomChoice</name>
+              </allocator>
+            </allocate>
+            <start initiator="system" />
           </resourcing>
           <decomposesTo id="Valutazione_trattamento_riformulato" />
         </task>
@@ -2990,7 +3020,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -3026,7 +3056,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -3065,7 +3095,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -3104,7 +3134,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -3143,7 +3173,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -3225,7 +3255,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -3297,9 +3327,7 @@
           <resourcing>
             <offer initiator="system">
               <distributionSet>
-                <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
-                </initialSet>
+                <initialSet />
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
             </offer>
@@ -3333,9 +3361,7 @@
           <resourcing>
             <offer initiator="system">
               <distributionSet>
-                <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
-                </initialSet>
+                <initialSet />
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
             </offer>
@@ -3370,7 +3396,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -3406,7 +3432,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -3442,7 +3468,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -3493,7 +3519,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -3528,11 +3554,11 @@
           <name>Valutazione trattamento oppiacei</name>
           <flowsInto>
             <nextElementRef id="Desometasone" />
-            <isDefaultFlow />
+            <predicate ordering="0">true()</predicate>
           </flowsInto>
           <flowsInto>
             <nextElementRef id="OutputCondition_3" />
-            <predicate ordering="0">/Scelta_Trattamento/TrattamentoRiuscito/text()='true'</predicate>
+            <isDefaultFlow />
           </flowsInto>
           <join code="xor" />
           <split code="xor" />
@@ -3540,7 +3566,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -3571,7 +3597,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -3618,7 +3644,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -3794,7 +3820,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
             </offer>
@@ -3810,7 +3836,7 @@
         <task id="Calcolo_Eta">
           <name>Calcolo Eta</name>
           <flowsInto>
-            <nextElementRef id="Informazioni_mal_di_testa" />
+            <nextElementRef id="Acquisizione_misure_diagnostiche" />
           </flowsInto>
           <join code="xor" />
           <split code="and" />
@@ -3833,13 +3859,76 @@
           </resourcing>
           <decomposesTo id="Calcolo_Eta" />
         </task>
-        <task id="Informazioni_mal_di_testa">
-          <name>Informazioni mal di testa</name>
+        <task id="Acquisizione_misure_diagnostiche">
+          <name>Acquisizione misure diagnostiche</name>
           <flowsInto>
-            <nextElementRef id="Acquisizione_misure_diagnostiche" />
+            <nextElementRef id="Prova" />
           </flowsInto>
           <join code="xor" />
           <split code="and" />
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;MisureDiagnostiche&gt;{/Acquisizione_misure_diagnostiche/MisureDiagnostiche/*}&lt;/MisureDiagnostiche&gt;" />
+              <mapsTo>MisureDiagnostiche</mapsTo>
+            </mapping>
+          </completedMappings>
+          <resourcing>
+            <offer initiator="system">
+              <distributionSet>
+                <initialSet>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
+                </initialSet>
+              </distributionSet>
+              <familiarParticipant taskID="Registrazione_paziente" />
+            </offer>
+            <allocate initiator="system">
+              <allocator>
+                <name>RandomChoice</name>
+              </allocator>
+            </allocate>
+            <start initiator="system" />
+          </resourcing>
+          <decomposesTo id="Acquisizione_misure_diagnostiche" />
+        </task>
+        <task id="Prova">
+          <name>Prova</name>
+          <flowsInto>
+            <nextElementRef id="Informazioni_mal_di_testa" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <startingMappings>
+            <mapping>
+              <expression query="&lt;MisureDiagnostiche&gt;{/Sottorete_Anamnesi/MisureDiagnostiche/*}&lt;/MisureDiagnostiche&gt;" />
+              <mapsTo>MisureDiagnostiche</mapsTo>
+            </mapping>
+          </startingMappings>
+          <completedMappings>
+            <mapping>
+              <expression query="&lt;CauseDiPreoccupazione&gt;{/Prova/CauseDiPreoccupazione/*}&lt;/CauseDiPreoccupazione&gt;" />
+              <mapsTo>CauseDiPreoccupazione</mapsTo>
+            </mapping>
+          </completedMappings>
+          <resourcing>
+            <offer initiator="user" />
+            <allocate initiator="user" />
+            <start initiator="user" />
+          </resourcing>
+          <decomposesTo id="Prova" />
+        </task>
+        <task id="Informazioni_mal_di_testa">
+          <name>Informazioni mal di testa</name>
+          <flowsInto>
+            <nextElementRef id="OutputCondition_1" />
+          </flowsInto>
+          <join code="xor" />
+          <split code="and" />
+          <startingMappings>
+            <mapping>
+              <expression query="&lt;CauseDiPreoccupazione&gt;{/Sottorete_Anamnesi/CauseDiPreoccupazione/*}&lt;/CauseDiPreoccupazione&gt;" />
+              <mapsTo>CauseDiPreoccupazione</mapsTo>
+            </mapping>
+          </startingMappings>
           <completedMappings>
             <mapping>
               <expression query="&lt;CaratteristicaLocalizzazioneMDT&gt;{/Informazioni_mal_di_testa/CaratteristicaLocalizzazioneMDT/*}&lt;/CaratteristicaLocalizzazioneMDT&gt;" />
@@ -3862,7 +3951,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Registrazione_paziente" />
@@ -3875,37 +3964,6 @@
             <start initiator="system" />
           </resourcing>
           <decomposesTo id="Informazioni_mal_di_testa" />
-        </task>
-        <task id="Acquisizione_misure_diagnostiche">
-          <name>Acquisizione misure diagnostiche</name>
-          <flowsInto>
-            <nextElementRef id="OutputCondition_1" />
-          </flowsInto>
-          <join code="xor" />
-          <split code="and" />
-          <completedMappings>
-            <mapping>
-              <expression query="&lt;MisureDiagnostiche&gt;{/Acquisizione_misure_diagnostiche/MisureDiagnostiche/*}&lt;/MisureDiagnostiche&gt;" />
-              <mapsTo>MisureDiagnostiche</mapsTo>
-            </mapping>
-          </completedMappings>
-          <resourcing>
-            <offer initiator="system">
-              <distributionSet>
-                <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
-                </initialSet>
-              </distributionSet>
-              <familiarParticipant taskID="Informazioni_mal_di_testa" />
-            </offer>
-            <allocate initiator="system">
-              <allocator>
-                <name>RandomChoice</name>
-              </allocator>
-            </allocate>
-            <start initiator="system" />
-          </resourcing>
-          <decomposesTo id="Acquisizione_misure_diagnostiche" />
         </task>
         <outputCondition id="OutputCondition_1" />
       </processControlElements>
@@ -4027,7 +4085,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -4078,7 +4136,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -4101,19 +4159,19 @@
           <split code="and" />
           <completedMappings>
             <mapping>
-              <expression query="&lt;SceltaTrattamentoNonFarmacologico&gt;{/Scelta_trattamento_non_farmacologico/SceltaTrattamentoNonFarmacologico/*}&lt;/SceltaTrattamentoNonFarmacologico&gt;" />
-              <mapsTo>SceltaTrattamentoNonFarmacologico</mapsTo>
-            </mapping>
-            <mapping>
               <expression query="&lt;DecisioneAttesa&gt;{/Scelta_trattamento_non_farmacologico/DecisioneAttesa/*}&lt;/DecisioneAttesa&gt;" />
               <mapsTo>DecisioneAttesa</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;SceltaTrattamentoNonFarmacologico&gt;{/Scelta_trattamento_non_farmacologico/SceltaTrattamentoNonFarmacologico/*}&lt;/SceltaTrattamentoNonFarmacologico&gt;" />
+              <mapsTo>SceltaTrattamentoNonFarmacologico</mapsTo>
             </mapping>
           </completedMappings>
           <resourcing>
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -4153,7 +4211,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -4188,11 +4246,11 @@
           <name>Valutazione</name>
           <flowsInto>
             <nextElementRef id="OutputCondition_4" />
-            <predicate ordering="0">/Trattamento_Profilattico_Generico/SuccessoProfilasi/text()='true'</predicate>
+            <isDefaultFlow />
           </flowsInto>
           <flowsInto>
             <nextElementRef id="Cambio_farmaco" />
-            <isDefaultFlow />
+            <predicate ordering="0">/Trattamento_Profilattico_Generico/SuccessoProfilassi/text()='false'</predicate>
           </flowsInto>
           <join code="xor" />
           <split code="xor" />
@@ -4206,7 +4264,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -4229,19 +4287,19 @@
           <split code="and" />
           <completedMappings>
             <mapping>
-              <expression query="&lt;SceltaTrattamentoProfilatticoGenericoFarmacologico&gt;{/Cambio_farmaco/SceltaTrattamentoProfilatticoGenericoFarmacologico/*}&lt;/SceltaTrattamentoProfilatticoGenericoFarmacologico&gt;" />
-              <mapsTo>SceltaTrattamentoProfilatticoGenericoFarmacologico</mapsTo>
-            </mapping>
-            <mapping>
               <expression query="&lt;DecisioneAttesa&gt;{/Cambio_farmaco/DecisioneAttesa/*}&lt;/DecisioneAttesa&gt;" />
               <mapsTo>DecisioneAttesa</mapsTo>
+            </mapping>
+            <mapping>
+              <expression query="&lt;SceltaTrattamentoProfilatticoGenericoFarmacologico&gt;{/Cambio_farmaco/SceltaTrattamentoProfilatticoGenericoFarmacologico/*}&lt;/SceltaTrattamentoProfilatticoGenericoFarmacologico&gt;" />
+              <mapsTo>SceltaTrattamentoProfilatticoGenericoFarmacologico</mapsTo>
             </mapping>
           </completedMappings>
           <resourcing>
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -4294,7 +4352,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -4325,7 +4383,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -4373,7 +4431,7 @@
             <offer initiator="system">
               <distributionSet>
                 <initialSet>
-                  <role>RO-4ff9b18a-9387-466e-b752-406059939510</role>
+                  <role>RO-235f7d53-738d-46d4-bcb5-128924bf0dd2</role>
                 </initialSet>
               </distributionSet>
               <familiarParticipant taskID="Acquisizione_misure_diagnostiche" />
@@ -4565,7 +4623,6 @@
       <name>Continua Terapia</name>
       <inputParam>
         <index>0</index>
-        <documentation>Input variable, called Immagine, string type</documentation>
         <name>Immagine</name>
         <type>string</type>
         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
@@ -4682,7 +4739,6 @@
       <name>Infografica Profilassi farmacologico</name>
       <inputParam>
         <index>0</index>
-        <documentation>Input variable, called Immagine, string type</documentation>
         <name>Immagine</name>
         <type>string</type>
         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
@@ -4716,7 +4772,6 @@
       <name>Infografica Trattamento non farmacologico</name>
       <inputParam>
         <index>0</index>
-        <documentation>Input variable, called Immagine, string type</documentation>
         <name>Immagine</name>
         <type>string</type>
         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
@@ -4726,6 +4781,12 @@
     </decomposition>
     <decomposition id="Informazioni_mal_di_testa" xsi:type="WebServiceGatewayFactsType">
       <name>Informazioni mal di testa</name>
+      <inputParam>
+        <index>3</index>
+        <name>CauseDiPreoccupazione</name>
+        <type>CauseDiPreoccupazione</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
       <outputParam>
         <index>0</index>
         <name>Sintomi</name>
@@ -4752,7 +4813,6 @@
         <name>CauseDiPreoccupazione</name>
         <type>CauseDiPreoccupazione</type>
         <namespace>http://www.w3.org/2001/XMLSchema</namespace>
-        <defaultValue />
       </outputParam>
       <externalInteraction>manual</externalInteraction>
     </decomposition>
@@ -4880,6 +4940,23 @@
         <defaultValue />
       </outputParam>
       <externalInteraction>manual</externalInteraction>
+    </decomposition>
+    <decomposition id="Prova" xsi:type="WebServiceGatewayFactsType">
+      <inputParam>
+        <index>0</index>
+        <name>MisureDiagnostiche</name>
+        <type>MisureDiagnostiche</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+      </inputParam>
+      <outputParam>
+        <index>1</index>
+        <name>CauseDiPreoccupazione</name>
+        <type>CauseDiPreoccupazione</type>
+        <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+        <defaultValue />
+      </outputParam>
+      <codelet>org.yawlfoundation.yawl.resourcing.codelets.CodeletAnamnesi</codelet>
+      <externalInteraction>automated</externalInteraction>
     </decomposition>
     <decomposition id="Registrazione_paziente" xsi:type="WebServiceGatewayFactsType">
       <name>Registrazione paziente</name>
@@ -5600,638 +5677,10 @@
     <locale language="it" country="IT"/>
     <specification id="Progetto" defaultBgColor="-526351">
       <size w="62" h="26"/>
-      <net id="Scelta_Trattamento" bgColor="-526351">
-        <bounds x="0" y="-60" w="1669" h="805"/>
-        <frame x="0" y="0" w="1687" h="708"/>
-        <viewport x="0" y="0" w="1687" h="708"/>
-        <vertex id="InputCondition_3">
-          <attributes>
-            <bounds x="0" y="340" w="32" h="32"/>
-          </attributes>
-        </vertex>
-        <vertex id="OutputCondition_3">
-          <attributes>
-            <bounds x="1.612" y="344" w="32" h="32"/>
-          </attributes>
-        </vertex>
-        <container id="DHE">
-          <vertex>
-            <attributes>
-              <bounds x="484" y="732" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="452" y="764" w="97" h="21"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Cloropromazina">
-          <vertex>
-            <attributes>
-              <bounds x="424" y="584" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="392" y="616" w="97" h="21"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Attesa_aggiuntivo">
-          <vertex>
-            <attributes>
-              <bounds x="908" y="580" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="876" y="612" w="97" h="41"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Attesa_cloropromazina">
-          <vertex>
-            <attributes>
-              <bounds x="544" y="576" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="512" y="608" w="97" h="41"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Oppiacei">
-          <vertex>
-            <attributes>
-              <bounds x="780" y="576" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="748" y="608" w="97" h="21"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Attesa_severo">
-          <vertex>
-            <attributes>
-              <bounds x="472" y="444" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="440" y="476" w="97" h="21"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Valutazione_trattamento_cloropromazina">
-          <vertex>
-            <attributes>
-              <bounds x="648" y="568" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="620" y="600" w="97" h="61"/>
-            </attributes>
-          </label>
-          <decorator type="XOR_split">
-            <position>13</position>
-            <attributes>
-              <bounds x="679" y="568" w="11" h="32"/>
-            </attributes>
-          </decorator>
-        </container>
-        <container id="Valutazione_trattamento_blando">
-          <vertex>
-            <attributes>
-              <bounds x="496" y="132" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="468" y="164" w="97" h="61"/>
-            </attributes>
-          </label>
-          <decorator type="XOR_split">
-            <position>13</position>
-            <attributes>
-              <bounds x="527" y="132" w="11" h="32"/>
-            </attributes>
-          </decorator>
-        </container>
-        <container id="Valutazione_trattamento_desometazone">
-          <vertex>
-            <attributes>
-              <bounds x="1.292" y="504" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="1.264" y="536" w="97" h="61"/>
-            </attributes>
-          </label>
-          <decorator type="XOR_split">
-            <position>13</position>
-            <attributes>
-              <bounds x="1.323" y="504" w="11" h="32"/>
-            </attributes>
-          </decorator>
-        </container>
-        <container id="Valutazione_trattamento_severo">
-          <vertex>
-            <attributes>
-              <bounds x="644" y="388" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="616" y="420" w="97" h="61"/>
-            </attributes>
-          </label>
-          <decorator type="XOR_split">
-            <position>13</position>
-            <attributes>
-              <bounds x="675" y="388" w="11" h="32"/>
-            </attributes>
-          </decorator>
-        </container>
-        <container id="Attesa_moderata">
-          <vertex>
-            <attributes>
-              <bounds x="404" y="312" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="372" y="344" w="97" h="41"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Trattamento_aggiuntivo">
-          <vertex>
-            <attributes>
-              <bounds x="272" y="552" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="240" y="584" w="97" h="41"/>
-            </attributes>
-          </label>
-          <decorator type="XOR_split">
-            <position>13</position>
-            <attributes>
-              <bounds x="303" y="552" w="11" h="32"/>
-            </attributes>
-          </decorator>
-          <decorator type="XOR_join">
-            <position>12</position>
-            <attributes>
-              <bounds x="262" y="552" w="11" h="32"/>
-            </attributes>
-          </decorator>
-        </container>
-        <container id="Trattamento_severo">
-          <vertex>
-            <attributes>
-              <bounds x="280" y="440" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="244" y="472" w="97" h="41"/>
-            </attributes>
-          </label>
-          <decorator type="XOR_join">
-            <position>12</position>
-            <attributes>
-              <bounds x="270" y="440" w="11" h="32"/>
-            </attributes>
-          </decorator>
-        </container>
-        <container id="Scelta_visita_specialistica">
-          <vertex>
-            <attributes>
-              <bounds x="760" y="428" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="732" y="460" w="97" h="41"/>
-            </attributes>
-          </label>
-          <decorator type="XOR_split">
-            <position>13</position>
-            <attributes>
-              <bounds x="791" y="428" w="11" h="32"/>
-            </attributes>
-          </decorator>
-        </container>
-        <container id="Infografica_Trattamento">
-          <vertex>
-            <attributes>
-              <bounds x="68" y="344" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="36" y="376" w="97" h="41"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Scelta_trattamento_acuto">
-          <vertex>
-            <attributes>
-              <bounds x="160" y="344" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="132" y="376" w="96" h="60"/>
-            </attributes>
-          </label>
-          <decorator type="XOR_split">
-            <position>13</position>
-            <attributes>
-              <bounds x="191" y="344" w="11" h="32"/>
-            </attributes>
-          </decorator>
-        </container>
-        <container id="Infografica_Sepcialista">
-          <vertex>
-            <attributes>
-              <bounds x="1.440" y="496" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="1.404" y="528" w="97" h="41"/>
-            </attributes>
-          </label>
-          <decorator type="XOR_join">
-            <position>12</position>
-            <attributes>
-              <bounds x="1.430" y="496" w="11" h="32"/>
-            </attributes>
-          </decorator>
-        </container>
-        <container id="Attesa_blanda">
-          <vertex>
-            <attributes>
-              <bounds x="372" y="156" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="340" y="188" w="97" h="21"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Trattamento_blando">
-          <vertex>
-            <attributes>
-              <bounds x="280" y="220" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="248" y="252" w="97" h="41"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Valutazione_trattamento_moderato">
-          <vertex>
-            <attributes>
-              <bounds x="516" y="280" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="488" y="312" w="97" h="61"/>
-            </attributes>
-          </label>
-          <decorator type="XOR_split">
-            <position>13</position>
-            <attributes>
-              <bounds x="547" y="280" w="11" h="32"/>
-            </attributes>
-          </decorator>
-        </container>
-        <container id="Attesa_aggiuntivo_1">
-          <vertex>
-            <attributes>
-              <bounds x="1.220" y="504" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="1.188" y="536" w="97" h="41"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Trattamento_moderato">
-          <vertex>
-            <attributes>
-              <bounds x="284" y="332" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="248" y="364" w="97" h="41"/>
-            </attributes>
-          </label>
-          <decorator type="XOR_join">
-            <position>12</position>
-            <attributes>
-              <bounds x="274" y="332" w="11" h="32"/>
-            </attributes>
-          </decorator>
-        </container>
-        <container id="Desometasone">
-          <vertex>
-            <attributes>
-              <bounds x="1.152" y="504" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="1.120" y="536" w="97" h="21"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Valutazione_trattamento_oppiacei">
-          <vertex>
-            <attributes>
-              <bounds x="1.076" y="584" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="1.048" y="616" w="97" h="61"/>
-            </attributes>
-          </label>
-          <decorator type="XOR_split">
-            <position>13</position>
-            <attributes>
-              <bounds x="1.107" y="584" w="11" h="32"/>
-            </attributes>
-          </decorator>
-        </container>
-        <flow source="Trattamento_blando" target="Attesa_blanda">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_trattamento_blando" target="Trattamento_moderato">
-          <ports in="2" out="2"/>
-          <attributes>
-            <lineStyle>13</lineStyle>
-            <points>
-              <value x="537" y="147,5"/>
-              <value x="409" y="287"/>
-              <value x="258" y="371,5"/>
-            </points>
-          </attributes>
-        </flow>
-        <flow source="Trattamento_aggiuntivo" target="Cloropromazina">
-          <ports in="3" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_trattamento_cloropromazina" target="OutputCondition_3">
-          <ports in="1" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_trattamento_oppiacei" target="Desometasone">
-          <ports in="2" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Attesa_aggiuntivo" target="Valutazione_trattamento_oppiacei">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Scelta_visita_specialistica" target="Trattamento_aggiuntivo">
-          <ports in="3" out="2"/>
-          <attributes>
-            <lineStyle>13</lineStyle>
-            <points>
-              <value x="801" y="451,25"/>
-              <value x="699" y="501"/>
-              <value x="238" y="551,5"/>
-            </points>
-          </attributes>
-        </flow>
-        <flow source="Trattamento_moderato" target="Attesa_moderata">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Infografica_Trattamento" target="Scelta_trattamento_acuto">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_trattamento_blando" target="OutputCondition_3">
-          <ports in="1" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_trattamento_desometazone" target="OutputCondition_3">
-          <ports in="2" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Oppiacei" target="Attesa_aggiuntivo">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Scelta_visita_specialistica" target="Infografica_Sepcialista">
-          <ports in="2" out="2"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_trattamento_cloropromazina" target="Oppiacei">
-          <ports in="2" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Cloropromazina" target="Attesa_cloropromazina">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="InputCondition_3" target="Infografica_Trattamento">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="DHE" target="OutputCondition_3">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-            <points>
-              <value x="515" y="747,5"/>
-              <value x="1.516" y="752"/>
-              <value x="1.612" y="359,5"/>
-            </points>
-          </attributes>
-        </flow>
-        <flow source="Attesa_blanda" target="Valutazione_trattamento_blando">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Attesa_aggiuntivo_1" target="Valutazione_trattamento_desometazone">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_trattamento_oppiacei" target="OutputCondition_3">
-          <ports in="1" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-            <points>
-              <value x="1.117" y="591,75"/>
-              <value x="1.468" y="648"/>
-              <value x="1.612" y="359,5"/>
-            </points>
-          </attributes>
-        </flow>
-        <flow source="Attesa_moderata" target="Valutazione_trattamento_moderato">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Desometasone" target="Attesa_aggiuntivo_1">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_trattamento_desometazone" target="Infografica_Sepcialista">
-          <ports in="3" out="3"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_trattamento_severo" target="OutputCondition_3">
-          <ports in="2" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Scelta_trattamento_acuto" target="Trattamento_blando">
-          <ports in="1" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Attesa_cloropromazina" target="Valutazione_trattamento_cloropromazina">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Trattamento_aggiuntivo" target="DHE">
-          <ports in="2" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-            <points>
-              <value x="313" y="567,5"/>
-              <value x="408" y="668"/>
-              <value x="484" y="747,5"/>
-            </points>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_trattamento_severo" target="Scelta_visita_specialistica">
-          <ports in="3" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Scelta_trattamento_acuto" target="Trattamento_aggiuntivo">
-          <ports in="4" out="2"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Scelta_trattamento_acuto" target="Trattamento_severo">
-          <ports in="3" out="2"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Scelta_trattamento_acuto" target="Trattamento_moderato">
-          <ports in="2" out="2"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_trattamento_moderato" target="OutputCondition_3">
-          <ports in="3" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Attesa_severo" target="Valutazione_trattamento_severo">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Trattamento_severo" target="Attesa_severo">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Infografica_Sepcialista" target="OutputCondition_3">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_trattamento_moderato" target="Trattamento_severo">
-          <ports in="4" out="2"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-            <points>
-              <value x="572" y="311"/>
-              <value x="612" y="373"/>
-              <value x="256" y="424"/>
-              <value x="270" y="455,5"/>
-            </points>
-          </attributes>
-        </flow>
-      </net>
       <net id="MenoPausa" bgColor="-526351">
-        <bounds x="0" y="0" w="1684" h="705"/>
-        <frame x="0" y="0" w="1687" h="708"/>
-        <viewport x="0" y="0" w="1687" h="708"/>
+        <bounds x="0" y="0" w="1684" h="684"/>
+        <frame x="0" y="0" w="1687" h="687"/>
+        <viewport x="0" y="0" w="1687" h="687"/>
         <vertex id="OutputCondition_6">
           <attributes>
             <bounds x="1.612" y="344" w="32" h="32"/>
@@ -6374,14 +5823,14 @@
             </attributes>
           </label>
         </container>
-        <flow source="Riformulazione_trattamento" target="Attesa_trattamento_riformulato">
-          <ports in="13" out="12"/>
+        <flow source="Preferenza_Paziente" target="GestioneFineProfilassi">
+          <ports in="3" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Preferenza_Paziente" target="GestioneFineProfilassi">
-          <ports in="3" out="12"/>
+        <flow source="Riformulazione_trattamento" target="Attesa_trattamento_riformulato">
+          <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
@@ -6422,13 +5871,13 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Tratamento_profilattico_ormonale" target="Attesa_prof_orm">
+        <flow source="InputCondition_6" target="Preferenza_Paziente">
           <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="InputCondition_6" target="Preferenza_Paziente">
+        <flow source="Tratamento_profilattico_ormonale" target="Attesa_prof_orm">
           <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
@@ -6453,10 +5902,643 @@
           </attributes>
         </flow>
       </net>
+      <net id="Scelta_Trattamento" bgColor="-526351">
+        <bounds x="0" y="0" w="1680" h="797"/>
+        <frame x="0" y="0" w="1687" h="687"/>
+        <viewport x="0" y="0" w="1687" h="687"/>
+        <vertex id="InputCondition_3">
+          <attributes>
+            <bounds x="0" y="340" w="32" h="32"/>
+          </attributes>
+        </vertex>
+        <vertex id="OutputCondition_3">
+          <attributes>
+            <bounds x="1.628" y="384" w="32" h="32"/>
+          </attributes>
+        </vertex>
+        <container id="DHE">
+          <vertex>
+            <attributes>
+              <bounds x="436" y="724" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="404" y="756" w="97" h="21"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Cloropromazina">
+          <vertex>
+            <attributes>
+              <bounds x="424" y="584" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="392" y="616" w="97" h="21"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Attesa_aggiuntivo">
+          <vertex>
+            <attributes>
+              <bounds x="908" y="580" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="876" y="612" w="97" h="41"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Attesa_cloropromazina">
+          <vertex>
+            <attributes>
+              <bounds x="544" y="576" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="512" y="608" w="97" h="41"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Oppiacei">
+          <vertex>
+            <attributes>
+              <bounds x="780" y="576" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="748" y="608" w="97" h="21"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Attesa_severo">
+          <vertex>
+            <attributes>
+              <bounds x="472" y="444" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="440" y="476" w="97" h="21"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Valutazione_trattamento_cloropromazina">
+          <vertex>
+            <attributes>
+              <bounds x="648" y="568" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="620" y="600" w="97" h="61"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="679" y="568" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Valutazione_trattamento_blando">
+          <vertex>
+            <attributes>
+              <bounds x="496" y="132" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="468" y="164" w="97" h="61"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="527" y="132" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Valutazione_trattamento_desometazone">
+          <vertex>
+            <attributes>
+              <bounds x="1.276" y="548" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="1.248" y="580" w="97" h="61"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="1.307" y="548" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Valutazione_trattamento_severo">
+          <vertex>
+            <attributes>
+              <bounds x="644" y="388" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="616" y="420" w="97" h="61"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="675" y="388" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Attesa_moderata">
+          <vertex>
+            <attributes>
+              <bounds x="404" y="312" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="372" y="344" w="97" h="41"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Trattamento_aggiuntivo">
+          <vertex>
+            <attributes>
+              <bounds x="272" y="552" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="240" y="584" w="97" h="41"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="303" y="552" w="11" h="32"/>
+            </attributes>
+          </decorator>
+          <decorator type="XOR_join">
+            <position>12</position>
+            <attributes>
+              <bounds x="262" y="552" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Trattamento_severo">
+          <vertex>
+            <attributes>
+              <bounds x="280" y="440" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="244" y="472" w="97" h="41"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_join">
+            <position>12</position>
+            <attributes>
+              <bounds x="270" y="440" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Scelta_visita_specialistica">
+          <vertex>
+            <attributes>
+              <bounds x="760" y="428" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="732" y="460" w="97" h="41"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="791" y="428" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Infografica_Trattamento">
+          <vertex>
+            <attributes>
+              <bounds x="68" y="344" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="36" y="376" w="97" h="41"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Scelta_trattamento_acuto">
+          <vertex>
+            <attributes>
+              <bounds x="160" y="344" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="132" y="376" w="96" h="60"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="191" y="344" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Infografica_Sepcialista">
+          <vertex>
+            <attributes>
+              <bounds x="1.416" y="424" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="1.380" y="456" w="97" h="41"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_join">
+            <position>12</position>
+            <attributes>
+              <bounds x="1.406" y="424" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Attesa_blanda">
+          <vertex>
+            <attributes>
+              <bounds x="372" y="156" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="340" y="188" w="97" h="21"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Trattamento_blando">
+          <vertex>
+            <attributes>
+              <bounds x="280" y="220" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="248" y="252" w="97" h="41"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Valutazione_trattamento_moderato">
+          <vertex>
+            <attributes>
+              <bounds x="516" y="280" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="488" y="312" w="97" h="61"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="547" y="280" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Attesa_aggiuntivo_1">
+          <vertex>
+            <attributes>
+              <bounds x="1.184" y="548" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="1.152" y="580" w="97" h="41"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Trattamento_moderato">
+          <vertex>
+            <attributes>
+              <bounds x="284" y="332" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="248" y="364" w="97" h="41"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_join">
+            <position>12</position>
+            <attributes>
+              <bounds x="274" y="332" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <container id="Desometasone">
+          <vertex>
+            <attributes>
+              <bounds x="1.104" y="548" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="1.072" y="580" w="97" h="21"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Valutazione_trattamento_oppiacei">
+          <vertex>
+            <attributes>
+              <bounds x="1.000" y="576" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="972" y="608" w="97" h="61"/>
+            </attributes>
+          </label>
+          <decorator type="XOR_split">
+            <position>13</position>
+            <attributes>
+              <bounds x="1.031" y="576" w="11" h="32"/>
+            </attributes>
+          </decorator>
+        </container>
+        <flow source="Trattamento_blando" target="Attesa_blanda">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_trattamento_blando" target="Trattamento_moderato">
+          <ports in="2" out="2"/>
+          <attributes>
+            <lineStyle>13</lineStyle>
+            <points>
+              <value x="537" y="147,5"/>
+              <value x="409" y="287"/>
+              <value x="258" y="371,5"/>
+            </points>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_trattamento_cloropromazina" target="OutputCondition_3">
+          <ports in="1" out="12"/>
+          <attributes>
+            <lineStyle>13</lineStyle>
+            <points>
+              <value x="689" y="575,75"/>
+              <value x="1.376" y="672"/>
+              <value x="1.612" y="359,5"/>
+            </points>
+          </attributes>
+        </flow>
+        <flow source="Trattamento_aggiuntivo" target="Cloropromazina">
+          <ports in="3" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_trattamento_oppiacei" target="Desometasone">
+          <ports in="2" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Attesa_aggiuntivo" target="Valutazione_trattamento_oppiacei">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Scelta_visita_specialistica" target="Trattamento_aggiuntivo">
+          <ports in="3" out="2"/>
+          <attributes>
+            <lineStyle>13</lineStyle>
+            <points>
+              <value x="801" y="451,25"/>
+              <value x="699" y="501"/>
+              <value x="238" y="551,5"/>
+            </points>
+          </attributes>
+        </flow>
+        <flow source="Trattamento_moderato" target="Attesa_moderata">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Infografica_Trattamento" target="Scelta_trattamento_acuto">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_trattamento_blando" target="OutputCondition_3">
+          <ports in="1" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_trattamento_desometazone" target="OutputCondition_3">
+          <ports in="2" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Oppiacei" target="Attesa_aggiuntivo">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Scelta_visita_specialistica" target="Infografica_Sepcialista">
+          <ports in="2" out="2"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_trattamento_cloropromazina" target="Oppiacei">
+          <ports in="2" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="InputCondition_3" target="Infografica_Trattamento">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Cloropromazina" target="Attesa_cloropromazina">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Attesa_blanda" target="Valutazione_trattamento_blando">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="DHE" target="OutputCondition_3">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+            <points>
+              <value x="515" y="747,5"/>
+              <value x="1.416" y="748"/>
+              <value x="1.628" y="399,5"/>
+            </points>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_trattamento_oppiacei" target="OutputCondition_3">
+          <ports in="3" out="12"/>
+          <attributes>
+            <lineStyle>13</lineStyle>
+            <points>
+              <value x="1.041" y="599,25"/>
+              <value x="1.362" y="635"/>
+              <value x="1.612" y="359,5"/>
+            </points>
+          </attributes>
+        </flow>
+        <flow source="Attesa_aggiuntivo_1" target="Valutazione_trattamento_desometazone">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Attesa_moderata" target="Valutazione_trattamento_moderato">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_trattamento_desometazone" target="Infografica_Sepcialista">
+          <ports in="3" out="3"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Desometasone" target="Attesa_aggiuntivo_1">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_trattamento_severo" target="OutputCondition_3">
+          <ports in="2" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Scelta_trattamento_acuto" target="Trattamento_blando">
+          <ports in="1" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_trattamento_severo" target="Scelta_visita_specialistica">
+          <ports in="3" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Trattamento_aggiuntivo" target="DHE">
+          <ports in="2" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+            <points>
+              <value x="313" y="567,5"/>
+              <value x="396" y="680"/>
+              <value x="436" y="739,5"/>
+            </points>
+          </attributes>
+        </flow>
+        <flow source="Scelta_trattamento_acuto" target="Trattamento_severo">
+          <ports in="3" out="2"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Scelta_trattamento_acuto" target="Trattamento_aggiuntivo">
+          <ports in="4" out="2"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Attesa_cloropromazina" target="Valutazione_trattamento_cloropromazina">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Scelta_trattamento_acuto" target="Trattamento_moderato">
+          <ports in="2" out="2"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_trattamento_moderato" target="OutputCondition_3">
+          <ports in="3" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Attesa_severo" target="Valutazione_trattamento_severo">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Trattamento_severo" target="Attesa_severo">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Infografica_Sepcialista" target="OutputCondition_3">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Valutazione_trattamento_moderato" target="Trattamento_severo">
+          <ports in="4" out="2"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+            <points>
+              <value x="572" y="311"/>
+              <value x="612" y="373"/>
+              <value x="256" y="424"/>
+              <value x="270" y="455,5"/>
+            </points>
+          </attributes>
+        </flow>
+      </net>
       <net id="Ipotesi_MdT_Primaria_Secondaria" bgColor="-526351">
-        <bounds x="0" y="0" w="1684" h="705"/>
-        <frame x="0" y="0" w="1687" h="708"/>
-        <viewport x="0" y="0" w="1687" h="708"/>
+        <bounds x="0" y="0" w="1684" h="684"/>
+        <frame x="0" y="0" w="1687" h="687"/>
+        <viewport x="0" y="0" w="1687" h="687"/>
         <vertex id="InputCondition_2">
           <attributes>
             <bounds x="8" y="336" w="32" h="32"/>
@@ -6707,9 +6789,9 @@
         </flow>
       </net>
       <net id="Trattamento_Profilattico_Generico" bgColor="-526351">
-        <bounds x="0" y="0" w="1684" h="705"/>
-        <frame x="0" y="0" w="1687" h="708"/>
-        <viewport x="0" y="0" w="1687" h="708"/>
+        <bounds x="0" y="0" w="1684" h="684"/>
+        <frame x="0" y="0" w="1687" h="687"/>
+        <viewport x="0" y="0" w="1687" h="687"/>
         <vertex id="InputCondition_4">
           <attributes>
             <bounds x="36" y="344" w="32" h="32"/>
@@ -6813,18 +6895,18 @@
         <container id="Trattamento_prof_gen_non_farmacologico">
           <vertex>
             <attributes>
-              <bounds x="492" y="288" w="32" h="32"/>
+              <bounds x="500" y="288" w="32" h="32"/>
             </attributes>
           </vertex>
           <label>
             <attributes>
-              <bounds x="464" y="320" w="97" h="61"/>
+              <bounds x="472" y="320" w="97" h="61"/>
             </attributes>
           </label>
           <decorator type="XOR_split">
             <position>13</position>
             <attributes>
-              <bounds x="523" y="288" w="11" h="32"/>
+              <bounds x="531" y="288" w="11" h="32"/>
             </attributes>
           </decorator>
         </container>
@@ -6954,14 +7036,14 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Attesa_BetTri" target="Valutazione_BetaTri">
-          <ports in="13" out="12"/>
+        <flow source="Trattamento_prof_gen_farmacologico" target="Infografica_Trattamento_non_farmacologico">
+          <ports in="3" out="3"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Trattamento_prof_gen_farmacologico" target="Infografica_Trattamento_non_farmacologico">
-          <ports in="3" out="3"/>
+        <flow source="Attesa_BetTri" target="Valutazione_BetaTri">
+          <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
@@ -7026,13 +7108,13 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Valutazione_BetaTri" target="OutputCondition_4">
+        <flow source="Infografica_Trattamento_non_farmacologico" target="Scelta_trattamento_non_farmacologico">
           <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Infografica_Trattamento_non_farmacologico" target="Scelta_trattamento_non_farmacologico">
+        <flow source="Valutazione_BetaTri" target="OutputCondition_4">
           <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
@@ -7040,9 +7122,9 @@
         </flow>
       </net>
       <net id="Ciclo_Mestruale" bgColor="-526351">
-        <bounds x="0" y="0" w="1684" h="705"/>
-        <frame x="0" y="0" w="1687" h="708"/>
-        <viewport x="0" y="0" w="1687" h="708"/>
+        <bounds x="0" y="0" w="1684" h="684"/>
+        <frame x="0" y="0" w="1687" h="687"/>
+        <viewport x="0" y="0" w="1687" h="687"/>
         <vertex id="InputCondition_5">
           <attributes>
             <bounds x="8" y="336" w="32" h="32"/>
@@ -7197,14 +7279,14 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Valutazione_trattamento_acuto" target="Fine-Profilassi">
-          <ports in="2" out="12"/>
+        <flow source="Attesa_profilassi_ormonale" target="Valutazione_profilassi_ormonale">
+          <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Attesa_profilassi_ormonale" target="Valutazione_profilassi_ormonale">
-          <ports in="13" out="12"/>
+        <flow source="Valutazione_trattamento_acuto" target="Fine-Profilassi">
+          <ports in="2" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
@@ -7264,103 +7346,10 @@
           </attributes>
         </flow>
       </net>
-      <net id="Sottorete_Anamnesi" bgColor="-526351">
-        <bounds x="0" y="0" w="1684" h="705"/>
-        <frame x="0" y="0" w="1687" h="708"/>
-        <viewport x="0" y="0" w="1687" h="708"/>
-        <vertex id="InputCondition_1">
-          <attributes>
-            <bounds x="36" y="344" w="32" h="32"/>
-          </attributes>
-        </vertex>
-        <vertex id="OutputCondition_1">
-          <attributes>
-            <bounds x="1.612" y="344" w="32" h="32"/>
-          </attributes>
-        </vertex>
-        <container id="Registrazione_paziente">
-          <vertex>
-            <attributes>
-              <bounds x="216" y="344" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="184" y="376" w="96" h="40"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Acquisizione_misure_diagnostiche">
-          <vertex>
-            <attributes>
-              <bounds x="1.068" y="348" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="1.036" y="380" w="96" h="60"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Calcolo_Eta">
-          <vertex>
-            <attributes>
-              <bounds x="464" y="344" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="432" y="376" w="96" h="20"/>
-            </attributes>
-          </label>
-        </container>
-        <container id="Informazioni_mal_di_testa">
-          <vertex>
-            <attributes>
-              <bounds x="780" y="348" w="32" h="32"/>
-            </attributes>
-          </vertex>
-          <label>
-            <attributes>
-              <bounds x="748" y="380" w="96" h="40"/>
-            </attributes>
-          </label>
-        </container>
-        <flow source="Acquisizione_misure_diagnostiche" target="OutputCondition_1">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Calcolo_Eta" target="Informazioni_mal_di_testa">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Informazioni_mal_di_testa" target="Acquisizione_misure_diagnostiche">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="Registrazione_paziente" target="Calcolo_Eta">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-        <flow source="InputCondition_1" target="Registrazione_paziente">
-          <ports in="13" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
-          </attributes>
-        </flow>
-      </net>
       <net id="Contraccettivi" bgColor="-526351">
-        <bounds x="0" y="0" w="1684" h="705"/>
-        <frame x="0" y="0" w="1687" h="708"/>
-        <viewport x="0" y="0" w="1687" h="708"/>
+        <bounds x="0" y="0" w="1684" h="684"/>
+        <frame x="0" y="0" w="1687" h="687"/>
+        <viewport x="0" y="0" w="1687" h="687"/>
         <vertex id="OutputCondition_7">
           <attributes>
             <bounds x="1.080" y="364" w="32" h="32"/>
@@ -7539,14 +7528,14 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Valutazione_rischi" target="Trattamento_senza_estrogeni">
-          <ports in="2" out="3"/>
+        <flow source="Preferenza_estrogeni" target="Trattamento_senza_estrogeni">
+          <ports in="2" out="2"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Preferenza_estrogeni" target="Trattamento_senza_estrogeni">
-          <ports in="2" out="2"/>
+        <flow source="Valutazione_rischi" target="Trattamento_senza_estrogeni">
+          <ports in="2" out="3"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
@@ -7588,10 +7577,121 @@
           </attributes>
         </flow>
       </net>
+      <net id="Sottorete_Anamnesi" bgColor="-526351">
+        <bounds x="0" y="0" w="1684" h="684"/>
+        <frame x="0" y="0" w="1687" h="687"/>
+        <viewport x="0" y="0" w="1687" h="687"/>
+        <vertex id="InputCondition_1">
+          <attributes>
+            <bounds x="36" y="344" w="32" h="32"/>
+          </attributes>
+        </vertex>
+        <vertex id="OutputCondition_1">
+          <attributes>
+            <bounds x="1.612" y="344" w="32" h="32"/>
+          </attributes>
+        </vertex>
+        <container id="Registrazione_paziente">
+          <vertex>
+            <attributes>
+              <bounds x="216" y="344" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="184" y="376" w="96" h="40"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Prova">
+          <vertex>
+            <attributes>
+              <bounds x="832" y="344" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="800" y="376" w="97" h="21"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Acquisizione_misure_diagnostiche">
+          <vertex>
+            <attributes>
+              <bounds x="668" y="340" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="636" y="372" w="97" h="61"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Calcolo_Eta">
+          <vertex>
+            <attributes>
+              <bounds x="464" y="344" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="432" y="376" w="96" h="20"/>
+            </attributes>
+          </label>
+        </container>
+        <container id="Informazioni_mal_di_testa">
+          <vertex>
+            <attributes>
+              <bounds x="1.016" y="344" w="32" h="32"/>
+            </attributes>
+          </vertex>
+          <label>
+            <attributes>
+              <bounds x="984" y="376" w="97" h="41"/>
+            </attributes>
+          </label>
+        </container>
+        <flow source="Prova" target="Informazioni_mal_di_testa">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Calcolo_Eta" target="Acquisizione_misure_diagnostiche">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Registrazione_paziente" target="Calcolo_Eta">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Acquisizione_misure_diagnostiche" target="Prova">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="InputCondition_1" target="Registrazione_paziente">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+        <flow source="Informazioni_mal_di_testa" target="OutputCondition_1">
+          <ports in="13" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
+      </net>
       <net id="Net" bgColor="-526351">
-        <bounds x="-19" y="-186" w="2224" h="1326"/>
-        <frame x="0" y="0" w="1687" h="708"/>
-        <viewport x="0" y="0" w="1687" h="708"/>
+        <bounds x="0" y="-24" w="2224" h="1326"/>
+        <frame x="0" y="0" w="1687" h="687"/>
+        <viewport x="0" y="0" w="1687" h="687"/>
         <vertex id="OutputCondition">
           <attributes>
             <bounds x="2.172" y="448" w="32" h="32"/>
@@ -8034,14 +8134,14 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Continua_Terapia_1" target="OutputCondition">
-          <ports in="13" out="12"/>
+        <flow source="Trattamento_Profilattico_Generico" target="Specialista_Link">
+          <ports in="3" out="2"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Trattamento_Profilattico_Generico" target="Specialista_Link">
-          <ports in="3" out="2"/>
+        <flow source="Continua_Terapia_1" target="OutputCondition">
+          <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
@@ -8125,14 +8225,14 @@
             </points>
           </attributes>
         </flow>
-        <flow source="MenoPausa" target="Setto_Peggioramento">
-          <ports in="13" out="3"/>
+        <flow source="Valutazione_Sesso" target="Valutazione_Adatto_a_Profilassi">
+          <ports in="3" out="2"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Valutazione_Sesso" target="Valutazione_Adatto_a_Profilassi">
-          <ports in="3" out="2"/>
+        <flow source="MenoPausa" target="Setto_Peggioramento">
+          <ports in="13" out="3"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
@@ -8143,14 +8243,14 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Valutazione_P1P2" target="Opzioni_P2">
-          <ports in="3" out="12"/>
+        <flow source="MdT_Ormone_correlato" target="InfograficaOrmonale">
+          <ports in="4" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="MdT_Ormone_correlato" target="InfograficaOrmonale">
-          <ports in="4" out="12"/>
+        <flow source="Valutazione_P1P2" target="Opzioni_P2">
+          <ports in="3" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
@@ -8167,14 +8267,14 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Dettagli_Correlazione_Ormonale" target="MenoPausa">
-          <ports in="3" out="12"/>
+        <flow source="Setto_Peggioramento" target="Valutazione_PeggioramentoFine">
+          <ports in="13" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Setto_Peggioramento" target="Valutazione_PeggioramentoFine">
-          <ports in="13" out="12"/>
+        <flow source="Dettagli_Correlazione_Ormonale" target="MenoPausa">
+          <ports in="3" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
@@ -8251,13 +8351,19 @@
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
+        <flow source="Valutazione_Adatto_a_Profilassi" target="Trattamento_Profilattico_Generico">
+          <ports in="3" out="12"/>
+          <attributes>
+            <lineStyle>11</lineStyle>
+          </attributes>
+        </flow>
         <flow source="Ipotesi_MdT_Primaria_Secondaria" target="OutputCondition">
           <ports in="3" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
           </attributes>
         </flow>
-        <flow source="Valutazione_Adatto_a_Profilassi" target="Trattamento_Profilattico_Generico">
+        <flow source="Valutazione_PeggioramentoFine" target="Valutazione_Profilassi">
           <ports in="3" out="12"/>
           <attributes>
             <lineStyle>11</lineStyle>
@@ -8272,12 +8378,6 @@
               <value x="1.920" y="684"/>
               <value x="2.172" y="463,5"/>
             </points>
-          </attributes>
-        </flow>
-        <flow source="Valutazione_PeggioramentoFine" target="Valutazione_Profilassi">
-          <ports in="3" out="12"/>
-          <attributes>
-            <lineStyle>11</lineStyle>
           </attributes>
         </flow>
         <flow source="Ipotesi_MdT_Primaria_Secondaria" target="Educazione_Paziente">
